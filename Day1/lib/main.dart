@@ -27,9 +27,12 @@ class _HomepageState extends State<Homepage> {
         ),
       ),
       body: SafeArea(
+        child:SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+           
           children: <Widget>[
+            
             Container(
               width: double.infinity,
               decoration: BoxDecoration(
@@ -49,11 +52,11 @@ class _HomepageState extends State<Homepage> {
                     height: 5,
                   ),
                   Text(
-                    'Inspriation',
+                    'Food',
                     style: TextStyle(color: Colors.black, fontSize: 40.0,fontWeight: FontWeight.bold),
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 10,
                   ),
                   Container(
                     padding: EdgeInsets.all(5),
@@ -74,13 +77,13 @@ class _HomepageState extends State<Homepage> {
                     ),
                   ),
                   SizedBox(
-                    height: 10,
+                    height: 5,
                   ),
                 ],
               ),
             ),
             SizedBox(
-              height: 10,
+              height: 5,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
@@ -94,7 +97,7 @@ class _HomepageState extends State<Homepage> {
                   SizedBox(
                     height: 15,
                   ),
-                  Container(
+                  Container(   // promo today
                     height: 200,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
@@ -110,7 +113,8 @@ class _HomepageState extends State<Homepage> {
                     height: 20.0,
                   ),
                   Container(
-                     height: 100,
+                    
+                     height: 100,// size of container last food
                      decoration:BoxDecoration(
                          borderRadius: BorderRadius.circular(20),
                          color: Colors.orange,
@@ -141,7 +145,7 @@ class _HomepageState extends State<Homepage> {
           ],
         ),
       ),
-    );
+    ),);
   }
 
   Widget promocard(Image) {
