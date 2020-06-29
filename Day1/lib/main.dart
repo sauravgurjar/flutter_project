@@ -134,7 +134,7 @@ class _HomepageState extends State<Homepage> {
                             alignment: Alignment.bottomLeft,
                             child: Padding(
                               padding: const EdgeInsets.all(15.0),
-                              child: Text('best food',style: TextStyle(color:Colors.white,fontSize: 20.0 ),),
+                              child: Text('Feedback',style: TextStyle(color:Colors.white,fontSize: 20.0 ),),
                             ),
                           ),
                        ),
