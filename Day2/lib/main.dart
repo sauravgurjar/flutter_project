@@ -18,7 +18,7 @@ class _HomepageState extends State<Homepage> with SingleTickerProviderStateMixin
 
   void initState() {
     _pageController = PageController(
-      initialPage: 1,
+      initialPage: 0,
     )..addListener(_onScroll);
     super.initState();
   }
@@ -34,11 +34,11 @@ class _HomepageState extends State<Homepage> with SingleTickerProviderStateMixin
       body: PageView(
         controller: _pageController,
         children: <Widget>[
-          makepage('assets/images/one.jpg', "add", "aDA", 1),
-          makepage('assets/images/two.jpg', "ssa", "SCAS", 2),
-          makepage('assets/images/three.jpg', "dca", "SACAC", 3),
-          makepage('assets/images/four.jpg', "sca", "ASCSA", 4),
-          makepage('assets/images/five.jpg', "asc", "CAASCA", 5),
+          makepage('assets/images/one.jpg', "Nalkeshwar", "The place of shiv where God of shive is live ", 1),
+          makepage('assets/images/two.jpg', "Nalkeshwar", "The waterfall of gwalior near by shivpuri gwalior border", 2),
+          makepage('assets/images/three.jpg', "SultanGhar", "happiness of life", 3),
+          makepage('assets/images/four.jpg', "England house", "Present in England", 4),
+          makepage('assets/images/five.jpg', "USA", "last", 5),
         ],
       ),
     );
