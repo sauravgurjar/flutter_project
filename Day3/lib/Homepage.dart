@@ -10,6 +10,7 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       backgroundColor: Colors.green,
       appBar: AppBar(
         backgroundColor: Colors.green,
@@ -41,6 +42,7 @@ class _HomepageState extends State<Homepage> {
           children: <Widget>[
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
+               
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[

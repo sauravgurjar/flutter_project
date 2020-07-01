@@ -40,6 +40,7 @@ class _StartPageState extends State<StartPage> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        
         decoration: BoxDecoration(
           image: DecorationImage(
               image: AssetImage('assets/images/Starter.jpg'),
@@ -54,6 +55,7 @@ class _StartPageState extends State<StartPage> with TickerProviderStateMixin {
           ])),
           child: Padding(
             padding: EdgeInsets.all(20.0),
+            child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.end,
@@ -122,10 +124,10 @@ class _StartPageState extends State<StartPage> with TickerProviderStateMixin {
                   )
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
               ],
-            ),
+            ),),
           ),
         ),
       ),
